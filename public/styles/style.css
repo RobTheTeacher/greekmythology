@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body.gods {
+    background-color: steelblue;
+}
+
+body.heroes {
+    background-color: tomato;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__title--container {
+    color: #fff;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 3rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        display: block;
+    }
+
+    .header__image {
+        display: block;
+        margin: auto;
+    }
+}

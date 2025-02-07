@@ -1,0 +1,18 @@
+<% if (locals.pageType) { 
+    if (pageType==="heroes") { %>
+        <div>
+            <h3>Welcome to the heroes Page</h3>
+            <p>Here you can read about all the adventures the ancient Greek Heroes had!</p>
+        </div>
+    <% } else if (pageType==="gods") { %>
+        <div>
+            <h3>Welcome to the Gods page</h3>
+            <p>The Greek gods live on top of Mount Olympus. There are many gods with many powers</p>
+        </div>
+    <% } else { %>
+        <div>
+            <h3>Welcome to my Greek Mythology website</h3>
+            <p>Here you can read about all the heroes and gods of ancient Greece!</p>
+        </div>
+    <% } %>
+<% } %>

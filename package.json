@@ -1,0 +1,18 @@
+{
+  "name": "greekmythology",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A website about what ancient used to think about",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Robacules",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
