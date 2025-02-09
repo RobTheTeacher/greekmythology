@@ -3,7 +3,7 @@ import godRouter from "./routes/godRouter.js";
 import heroRouter from "./routes/heroRouter.js";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.set("view engine", "ejs")
 
@@ -21,4 +21,4 @@ app.get("/", (req, res) => {
 app.use("/gods", godRouter) // godRouter = any endpoint that starts with /gods
 app.use("/heroes", heroRouter);
 
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
+app.listen(PORT, () => console.log("Connected on " + PORT))
