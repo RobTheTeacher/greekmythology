@@ -10,7 +10,7 @@ app.set("view engine", "ejs")
 app.use(express.static("public"))
 
 app.get("/", (req, res) => {
-    res.render("pages/home", {
+    res.render("pages/index", {
         headTitle: "Greek Mythology",
         title: "Rob's Page on Greek Mythology",
         subtitle: "Learn about Gods and heroes!",
