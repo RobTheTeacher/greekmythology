@@ -3,15 +3,13 @@ import godRouter from "./routes/godRouter.js";
 import heroRouter from "./routes/heroRouter.js";
 import * as path from "path";
 
-
+const PORT = 3000;
 const app = express();
-const __dirname = path.resolve();
 
-const PORT = process.env.PORT || 3000;
-app.set('views', __dirname + '/views');
+
 app.set("view engine", "ejs")
 
-app.use(express.static(path.join(__dirname,"public")))
+app.use(express.static( "public"))
 
 app.get("/", (req, res) => {
     res.render("pages/index", {
