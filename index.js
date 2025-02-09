@@ -1,13 +1,14 @@
 import express from "express"
 import godRouter from "./routes/godRouter.js";
 import heroRouter from "./routes/heroRouter.js";
-import dotenv from "dotenv"
+import * as path from "path";
+
 
 const app = express();
+const __dirname = path.resolve();
 
-dotenv.config();
 const PORT = process.env.PORT || 3000;
-
+app.set('views', __dirname + '/views');
 app.set("view engine", "ejs")
 
 app.use(express.static("public"))
