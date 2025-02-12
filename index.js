@@ -2,8 +2,11 @@ import express from "express"
 import godRouter from "./routes/godRouter.js";
 import heroRouter from "./routes/heroRouter.js";
 import * as path from "path";
+import * as dotenv from "dotenv";
 
-const PORT = 3000;
+dotenv.config();
+
+const PORT = process.env.PORT
 const app = express();
 const __dirname = path.resolve();
 

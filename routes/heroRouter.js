@@ -27,7 +27,7 @@ heroRouter.get("/odysseus", (req, res) => {
     let odysseus = Heroes[1]
     res.render('pages/hero', {
         headTitle: odysseus.name,
-        title:odysseus.name,
+        title: odysseus.name,
         subtitle: "Info about our hero",
         hero: odysseus
     })

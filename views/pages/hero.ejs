@@ -4,12 +4,16 @@
 <body>
     <%- include('../partials/header') %>
     <%- include('../partials/menu') %>
+    <% function x()  { %>
+        <%     alert(333) %>
+        <%    } %>
     <% if (locals.hero) { %>
         <h2><%= hero.name %></h2>
         <h4>Power: <%= hero.power %> </h4>
         <div>
             <p><%= hero.description %></p>
         </div>
+        <button onclick='x()'>click</button>
     <% } %>
 </body>
 </html>
